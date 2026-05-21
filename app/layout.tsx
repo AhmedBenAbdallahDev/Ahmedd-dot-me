@@ -26,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full">
-      <body className="relative h-full m-0 antialiased overflow-y-auto">
+      <body className="relative isolate h-full m-0 antialiased overflow-y-auto bg-black">
         <GlobalBackground />
         <div className="crt-overlay pointer-events-none" />
         <div className="relative z-10">{children}</div>
