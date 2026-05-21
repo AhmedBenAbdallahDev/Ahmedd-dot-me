@@ -185,7 +185,7 @@ body {
   );
   background-size: 100% 4px, 3px 100%;
   pointer-events: none;
-  z-index: 100;
+  z-index: 5;
 }
 
 .crt-overlay::after {
@@ -198,7 +198,7 @@ body {
   right: 0;
   background: rgba(18, 16, 16, 0.03);
   opacity: 0;
-  z-index: 100;
+  z-index: 5;
   pointer-events: none;
   animation: flicker 0.15s infinite;
 }
