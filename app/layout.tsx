@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Ahmed Ben Abdallah',
-  description: 'Work in progress portfolio for Ahmed Ben Abdallah.',
+  description: 'Work in progress portfolio for Ahmed Ben Abdallah',
   metadataBase: process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : undefined,
 };
 
