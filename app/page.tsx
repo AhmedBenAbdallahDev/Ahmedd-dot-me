@@ -8,7 +8,7 @@ export default function Home() {
         <section className="mb-24">
           <div className="border border-neutral-800 bg-black/60 backdrop-blur-md p-8 md:p-12 rounded-lg">
             <h1 className="pixel-title text-lg md:text-2xl font-bold text-white mb-3 leading-relaxed">
-              <span className="rainbow-wave">Ahmed Warka</span> <span className="text-neutral-400">(WIP)</span>
+              <span className="rainbow-wave">Ahmed Ben Abdallah</span> <span className="text-neutral-400">(WIP)</span>
             </h1>
             <p className="text-xl md:text-2xl text-neutral-400 mt-4">
               Aspiring Game Developer & CS Student from Tunisia 🎮
@@ -59,7 +59,7 @@ export default function Home() {
                 <p className="text-neutral-400 text-sm mb-4">
                   this site! my personal portfolio where i showcase my game dev journey and web experiments
                 </p>
-                <a href="https://github.com/JhunHoonHimself/personal-site" target="_blank" className="text-sm text-neutral-500 hover:text-white underline">
+                <a href="https://github.com/AhmedBenAbdallahDev/ahmedd" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-500 hover:text-white underline">
                   view repository
                 </a>
               </div>
@@ -72,7 +72,7 @@ export default function Home() {
                 <p className="text-neutral-400 text-sm mb-4">
                   demos for godot 3. this is for kinda work in progress
                 </p>
-                <a href="https://github.com/JhunHoonHimself/godot-3-demos" target="_blank" className="text-sm text-neutral-500 hover:text-white underline">
+                <a href="https://github.com/AhmedBenAbdallahDev/godot-3-demos" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-500 hover:text-white underline">
                   view repository
                 </a>
               </div>
@@ -105,13 +105,13 @@ export default function Home() {
               I'm always open to collaborating on game dev projects or talking about web tech.
             </p>
             <div className="flex justify-center gap-8">
-              <a href="https://github.com/JhunHoonHimself" target="_blank" className="text-neutral-400 hover:text-white underline decoration-neutral-700 underline-offset-4">GitHub</a>
+              <a href="https://github.com/AhmedBenAbdallahDev" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white underline decoration-neutral-700 underline-offset-4">GitHub</a>
             </div>
           </div>
         </section>
 
         <footer className="text-center text-neutral-600 text-xs">
-          <p>© {new Date().getFullYear()} Ahmed Warka. Built with passion and code.</p>
+          <p>© {new Date().getFullYear()} Ahmed Ben Abdallah. Built with passion and code.</p>
         </footer>
       </div>
     </main>
