@@ -199,7 +199,8 @@ export const Component = () => {
   const dockIcons: DockIcon[] = [
     {
       src: "/icons/claude.png",
-      alt: "Claude",
+      alt: "/CarthageaDev",
+      onClick: () => window.open("https://carthagea.itch.io/", "_blank")
     },
     {
       src: "/icons/finder.png",
