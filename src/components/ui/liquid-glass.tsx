@@ -92,20 +92,20 @@ const GlassDock: React.FC<{ icons: DockIcon[]; href?: string }> = ({
       </div>
       <GlassEffect
         href={href}
-        className="rounded-3xl p-3 hover:p-4 hover:rounded-4xl"
+        className="rounded-3xl p-2.5 hover:p-3.5 hover:rounded-4xl"
       >
-        <div className="flex items-center justify-center gap-2 rounded-3xl p-3 py-0 px-2 overflow-hidden">
+        <div className="flex items-center justify-center gap-1.5 rounded-3xl p-2.5 py-0 px-1 overflow-hidden">
           {icons.map((icon, index) => (
             <div 
               key={index}
-              className="relative p-1"
+              className="relative p-0.5"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <img
                 src={icon.src}
                 alt={icon.alt}
-                className={`w-12 h-12 sm:w-16 sm:h-16 object-contain shrink-0 p-1.5 transition-all duration-700 hover:scale-110 cursor-pointer ${icon.className || ""}`}
+                className={`w-12 h-12 sm:w-16 sm:h-16 object-contain shrink-0 p-1 transition-all duration-700 hover:scale-110 cursor-pointer ${icon.className || ""}`}
                 style={{
                   transformOrigin: "center center",
                   transitionTimingFunction: "cubic-bezier(0.175, 0.885, 0.32, 2.2)",
