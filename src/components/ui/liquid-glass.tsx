@@ -128,7 +128,7 @@ const GlassButton: React.FC<{ children: React.ReactNode; href?: string }> = ({
 }) => (
   <GlassEffect
     href={href}
-    className="rounded-3xl px-10 py-6 hover:px-11 hover:py-7 hover:rounded-4xl overflow-hidden"
+    className="rounded-3xl px-8 py-4 hover:px-9 hover:py-5 hover:rounded-4xl overflow-hidden"
   >
     <div
       className="transition-all duration-700 hover:scale-95"
@@ -238,7 +238,7 @@ export const Component = () => {
         <GlassDock icons={dockIcons} href="https://x.com/notsurajgaud" />
 
         <GlassButton href="https://x.com/notsurajgaud">
-          <div className="text-xl text-white">
+          <div className="text-lg text-white">
             <p>How can i help you today?</p>
           </div>
         </GlassButton>
