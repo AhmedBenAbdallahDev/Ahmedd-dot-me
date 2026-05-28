@@ -6,9 +6,9 @@
 
 A portfolio experiment designed with the philosophy that sometimes, simplicity works fine too.
 
-This project features an Apple-inspired liquid glass dock component—a custom UI experiment crafted for this space.
+This project features an Apple-inspired liquid glass dock component, a custom UI experiment crafted for this space.
 
-## Development
+## Mandatory how to run section
 
 ```bash
 bun install
