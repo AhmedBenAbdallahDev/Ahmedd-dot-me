@@ -229,9 +229,9 @@ export const Component = () => {
     <div
       className="min-h-screen h-full flex items-center justify-center font-light relative overflow-hidden w-full"
       style={{
-        background: `url("https://images.unsplash.com/photo-1444084316824-dc26d6657664?q=80&w=1740&auto=format&fit=crop") center center`,
-        animation: "moveBackground 180s linear infinite",
+        background: `url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdsMnp0ZGoyNW5vZnQ0eWFyamFvZzdrMnltcnU2bzVjcW51NW95bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pVGsAWjzvXcZW4ZBTE/giphy.gif") center center`,
         backgroundSize: "cover",
+        imageRendering: "pixelated",
       }}
     >
       <GlassFilter />
