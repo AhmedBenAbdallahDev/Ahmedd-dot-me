@@ -232,7 +232,7 @@ export const Component = () => {
     {
       src: "/icons/steam.png",
       alt: "@carthageadev",
-      onClick: () => window.open("https://steamcommunity.com/id/carthageadev", "_blank")
+      onClick: () => window.open("https://steamcommunity.com/id/carthageadev/", "_blank")
     },
   ];
 
