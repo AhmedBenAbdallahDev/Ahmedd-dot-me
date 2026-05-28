@@ -238,11 +238,11 @@ export const Component = () => {
           poster="https://video.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/60eee6e5-d34f-4a62-ba34-3927923867dd/thumbnail"
         >
           <source 
-            src="https://video.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/60eee6e5-d34f-4a62-ba34-3927923867dd/format=1080p" 
+            src="https://video.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/60eee6e5-d34f-4a62-ba34-3927923867dd/?format=1080p" 
             type="video/mp4" 
           />
           <source 
-            src="https://video.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/60eee6e5-d34f-4a62-ba34-3927923867dd/format=720p" 
+            src="https://video.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/60eee6e5-d34f-4a62-ba34-3927923867dd/?format=720p" 
             type="video/mp4" 
           />
         </video>
