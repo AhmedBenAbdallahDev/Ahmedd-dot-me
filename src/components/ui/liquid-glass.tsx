@@ -88,7 +88,12 @@ const GlassDock: React.FC<{ icons: DockIcon[]; href?: string }> = ({
         className="mb-8 absolute -top-10 flex items-end justify-center transition-opacity duration-300 pointer-events-none"
         style={{ opacity: hoveredIndex !== null ? 1 : 0 }}
       >
-        <span className="text-white text-sm font-medium tracking-wide rounded-full bg-black/60 px-3 py-1 shadow-lg shadow-black/40 ring-1 ring-white/10 backdrop-blur-md whitespace-nowrap">
+        <span
+          className="text-white text-sm font-medium tracking-wide whitespace-nowrap select-none"
+          style={{
+            textShadow: "0 1px 2px rgba(0,0,0,0.95), 0 0 10px rgba(0,0,0,0.35)",
+          }}
+        >
           {hoveredIndex !== null ? icons[hoveredIndex].alt : ""}
         </span>
       </div>
