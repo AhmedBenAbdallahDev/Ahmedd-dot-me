@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { Toaster, toast } from "sonner";
+import { Copy } from "lucide-react";
 
 // Types
 interface GlassEffectProps {
@@ -227,6 +229,7 @@ export const Component = () => {
 
   return (
     <div className="min-h-screen h-full flex items-center justify-center font-light relative overflow-hidden w-full bg-black">
+      <Toaster position="top-center" richColors />
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
         <video
@@ -255,11 +258,19 @@ export const Component = () => {
       <div className="relative z-10 flex flex-col gap-6 items-center justify-center w-full">
         <GlassDock icons={dockIcons} href="https://x.com/notsurajgaud" />
 
-        <GlassButton href="https://x.com/notsurajgaud">
-          <div className="text-lg text-white">
-            <p>How can i help you today?</p>
-          </div>
-        </GlassButton>
+        <div 
+          onClick={() => {
+            navigator.clipboard.writeText("AhmedDev@email.com");
+            toast.success("Copied to clipboard!");
+          }}
+        >
+          <GlassButton className="px-6 py-3">
+            <div className="text-lg text-white flex items-center gap-3">
+              <p>AhmedDev@email.com</p>
+              <Copy size={16} className="opacity-60" />
+            </div>
+          </GlassButton>
+        </div>
       </div>     
     </div>
   );
