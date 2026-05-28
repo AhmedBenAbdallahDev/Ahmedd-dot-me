@@ -217,13 +217,14 @@ const LoopingVideo = ({ src, poster }: { src: string; poster: string }) => {
   };
 
   return (
-    <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+    <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none bg-black">
       <video
         ref={videoRefA}
         onTimeUpdate={handleTimeUpdate}
         autoPlay
         muted
         playsInline
+        style={{ zIndex: activeVideo === 'a' ? 20 : 10 }}
         className={`absolute min-w-full min-h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover transition-opacity duration-[2000ms] ${
           activeVideo === 'a' ? 'opacity-100' : 'opacity-0'
         }`}
@@ -237,6 +238,7 @@ const LoopingVideo = ({ src, poster }: { src: string; poster: string }) => {
         onTimeUpdate={handleTimeUpdate}
         muted
         playsInline
+        style={{ zIndex: activeVideo === 'b' ? 20 : 10 }}
         className={`absolute min-w-full min-h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover transition-opacity duration-[2000ms] ${
           activeVideo === 'b' ? 'opacity-100' : 'opacity-0'
         }`}
@@ -244,7 +246,7 @@ const LoopingVideo = ({ src, poster }: { src: string; poster: string }) => {
         <source src={src.replace(".webm", ".mp4")} type="video/mp4" />
         <source src={src} type="video/webm" />
       </video>
-      <div className="absolute inset-0 bg-black/10" />
+      <div className="absolute inset-0 bg-black/10 z-30" />
     </div>
   );
 };
