@@ -198,8 +198,8 @@ const GlassFilter: React.FC = () => (
 export const Component = () => {
   const dockIcons: DockIcon[] = [
     {
-      src: "/icons/claude.png",
-      alt: "/CarthageaDev",
+      src: "/icons/claude.png", // This is actually the itch icon
+      alt: "carthagea.itch.io",
       onClick: () => window.open("https://carthagea.itch.io/", "_blank")
     },
     {
@@ -229,8 +229,9 @@ export const Component = () => {
     <div
       className="min-h-screen h-full flex items-center justify-center font-light relative overflow-hidden w-full"
       style={{
-        background: `url("https://images.unsplash.com/photo-1432251407527-504a6b4174a2?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center`,
-        animation: "moveBackground 60s linear infinite",
+        background: `url("https://images.unsplash.com/photo-1444084316824-dc26d6657664?q=80&w=1740&auto=format&fit=crop") center center`,
+        animation: "moveBackground 180s linear infinite",
+        backgroundSize: "cover",
       }}
     >
       <GlassFilter />
