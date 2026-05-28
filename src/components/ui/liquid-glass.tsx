@@ -203,8 +203,9 @@ export const Component = () => {
       onClick: () => window.open("https://carthagea.itch.io/", "_blank")
     },
     {
-      src: "/icons/finder.png",
-      alt: "Finder",
+      src: "/icons/linkedin-v2.png",
+      alt: "LinkedIn",
+      onClick: () => window.open("https://www.linkedin.com/in/ahmed-ben-abdallah-dev/", "_blank")
     },
     {
       src: "/icons/chatgpt.png",
